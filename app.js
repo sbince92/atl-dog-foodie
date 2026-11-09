@@ -404,3 +404,21 @@ if (vitDialog) {
   // click on backdrop closes
   vitDialog.addEventListener("click", e => { if (e.target === vitDialog) vitDialog.close("close"); });
 }
+
+/* ================================================================
+   HOME — customer experience teaser (latest approved review)
+   ================================================================ */
+(async () => {
+  const avg = $("#teaserAvg"), stars = $("#teaserStars"), count = $("#teaserCount"), quote = $("#teaserQuote");
+  if (!avg || !window.SITE) return;
+  try {
+    const { summary, reviews } = await SITE.fetchReviews();
+    avg.textContent = summary.count ? summary.average.toFixed(1) : "New";
+    stars.replaceChildren(SITE.stars(summary.average || 5));
+    count.textContent = summary.count ? `${summary.count} review${summary.count === 1 ? "" : "s"}` : "Be the first to review";
+    if (reviews[0]) {
+      quote.querySelector("p").textContent = `\u201C${reviews[0].text}\u201D`;
+      quote.querySelector("footer").textContent = [reviews[0].name, reviews[0].dog].filter(Boolean).join(" · ");
+    }
+  } catch (e) { count.textContent = "Read the reviews"; stars.replaceChildren(SITE.stars(5)); }
+})();

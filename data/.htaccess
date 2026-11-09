@@ -1,0 +1,2 @@
+# Never serve the data folder directly; reviews are read through /api/reviews.php
+Require all denied

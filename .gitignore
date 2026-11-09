@@ -1,3 +1,5 @@
 .claude/
 .DS_Store
 _*.html
+ADMIN-KEY.txt
+data/live/

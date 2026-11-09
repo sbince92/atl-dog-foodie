@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leave a Review — ATL Dog Foodie</title>
+  <meta name="description" content="Tell other dog parents how your dog's stay at ATL Dog Foodie went.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FC75B4'/%3E%3Ccircle cx='11' cy='11' r='3' fill='%23474329'/%3E%3Ccircle cx='21' cy='11' r='3' fill='%23474329'/%3E%3Cellipse cx='16' cy='21' rx='7' ry='5.5' fill='%23474329'/%3E%3C/svg%3E">
+</head>
+<body class="review-page" data-page="review">
+
+<header class="page-head compact">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="ATL Dog Foodie home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="3.2"/><circle cx="21" cy="11" r="3.2"/><circle cx="6.5" cy="17" r="2.6"/><circle cx="25.5" cy="17" r="2.6"/><ellipse cx="16" cy="22" rx="7" ry="5.5"/></svg>
+      </span>
+      <span class="brand-name">ATL Dog Foodie</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="review.html" class="is-current">Leave a review</a></li>
+    </ul>
+    <a class="pill" href="index.html#book">Book a stay</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#services">Services</a>
+    <a href="experience.html">Experience</a>
+    <a href="index.html#book" class="pill">Book a stay</a>
+  </div>
+
+  <div class="page-head-body">
+    <p class="eyebrow light reveal-up in">Leave a review</p>
+    <h1 class="page-title reveal-up in" style="--d:.1s">How was <span class="script-accent">the stay?</span></h1>
+    <p class="page-lede reveal-up in" style="--d:.2s">Two minutes, tops. Your review is read by a human before it goes on the site, and only your first name and your dog's name are shown.</p>
+  </div>
+</header>
+
+<main class="container review-wrap">
+  <form class="inquiry review-form reveal-up in" id="reviewForm" novalidate>
+    <fieldset>
+      <legend>Your rating</legend>
+      <div class="star-input" role="radiogroup" aria-label="Star rating">
+        <button type="button" role="radio" aria-checked="false" aria-label="1 star"></button>
+        <button type="button" role="radio" aria-checked="false" aria-label="2 stars"></button>
+        <button type="button" role="radio" aria-checked="false" aria-label="3 stars"></button>
+        <button type="button" role="radio" aria-checked="false" aria-label="4 stars"></button>
+        <button type="button" role="radio" aria-checked="false" aria-label="5 stars"></button>
+        <span class="star-label" id="ratingLabel">Tap a star</span>
+      </div>
+      <input type="hidden" name="rating" id="ratingField" value="0">
+    </fieldset>
+
+    <fieldset>
+      <legend>The stay</legend>
+      <label class="field"><span>Your review</span>
+        <textarea name="text" rows="5" required maxlength="1200" placeholder="How did drop-off go? How did your dog come home? Anything you'd tell another dog parent?"></textarea>
+      </label>
+      <div class="field-row">
+        <label class="field"><span>Your name</span><input type="text" name="name" required maxlength="60" placeholder="Dana M."></label>
+        <label class="field"><span>Your dog</span><input type="text" name="dog" maxlength="60" placeholder="Rosie, 4 yr pit mix"></label>
+      </div>
+      <div class="field-row">
+        <label class="field"><span>What did they come for?</span>
+          <select name="service">
+            <option value="Boarding">Boarding</option>
+            <option value="Boarding + bath">Boarding + bath</option>
+            <option value="Bath / nails">Bath / nails only</option>
+            <option value="Long-term stay">Long-term stay</option>
+          </select>
+        </label>
+        <label class="field"><span>Email (optional, never shown)</span><input type="email" name="email" maxlength="120" placeholder="you@example.com"></label>
+      </div>
+      <!-- honeypot: hidden from people, filled by bots -->
+      <label class="hp" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <div class="toggles">
+        <label><input type="checkbox" name="consent" required><span>You can publish this review with my first name and my dog's name.</span></label>
+      </div>
+    </fieldset>
+
+    <p class="form-error" id="reviewError" role="alert" hidden></p>
+    <button class="btn-neon wide" type="submit" id="reviewSubmit">Send my review <span class="arrow">↗</span></button>
+    <p class="fine">Reviews are checked by a person before they appear. We never post your email.</p>
+  </form>
+
+  <div class="inquiry-success" id="reviewSuccess" hidden>
+    <span class="check">✓</span>
+    <h3>Thank you.</h3>
+    <p>Your review is in. It will show up on the <a href="experience.html#reviews">experience page</a> once it's been read and approved.</p>
+    <a class="btn-ghost" href="index.html">Back to the site</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-base">
+    <span>© <span id="year"></span> ATL Dog Foodie · <a href="mailto:info@atldogfoodie.com">info@atldogfoodie.com</a> · <a href="tel:+14047972865">(404) 797-2865</a></span>
+    <a href="index.html">Home →</a>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="review.js"></script>
+</body>
+</html>

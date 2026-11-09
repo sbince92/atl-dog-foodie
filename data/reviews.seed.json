@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sample0001",
+    "name": "Dana M.",
+    "dog": "Rosie, 4 yr pit mix",
+    "service": "Boarding",
+    "rating": 5,
+    "text": "Rosie pulls toward the gate the second we turn onto the road. I've never seen her this excited to be dropped off anywhere.",
+    "email": "",
+    "created": "2026-10-02T15:00:00+00:00",
+    "status": "approved",
+    "sample": true
+  },
+  {
+    "id": "sample0002",
+    "name": "Marcus T.",
+    "dog": "Bruno, 7 yr staffy",
+    "service": "Boarding",
+    "rating": 5,
+    "text": "The evening photo update is the best part of my day when I travel. He always looks like he just won the lottery.",
+    "email": "",
+    "created": "2026-09-18T15:00:00+00:00",
+    "status": "approved",
+    "sample": true
+  },
+  {
+    "id": "sample0003",
+    "name": "Priya K.",
+    "dog": "Juno, 10 yr boxer",
+    "service": "Boarding + bath",
+    "rating": 5,
+    "text": "They handled her meds and her anxiety better than I do. Came home calm, clean, and asleep by eight.",
+    "email": "",
+    "created": "2026-08-30T15:00:00+00:00",
+    "status": "approved",
+    "sample": true
+  }
+]

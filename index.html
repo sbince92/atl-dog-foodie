@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FC75B4'/%3E%3Ccircle cx='11' cy='11' r='3' fill='%23474329'/%3E%3Ccircle cx='21' cy='11' r='3' fill='%23474329'/%3E%3Cellipse cx='16' cy='21' rx='7' ry='5.5' fill='%23474329'/%3E%3C/svg%3E">
 </head>
-<body>
+<body data-page="home">
 
 <!-- ============ HERO ============ -->
 <div class="progress" id="progress" aria-hidden="true"></div>
 <nav class="floating-nav" id="floatingNav" aria-label="Quick navigation">
   <a href="#top" class="brand-mini">ATL Dog Foodie</a>
   <a href="#services">Services</a>
-  <a href="#facility">Facility</a>
+  <a href="experience.html">Experience</a>
   <a href="#book" class="floating-cta">Book a stay</a>
 </nav>
 
@@ -43,7 +43,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#facility">Facility</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="review.html">Leave a review</a></li>
     </ul>
     <a class="pill" href="#book">Book a stay</a>
     <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
@@ -51,8 +52,9 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="#services">Services</a>
-    <a href="#facility">Facility</a>
-      <a href="#book" class="pill">Book a stay</a>
+    <a href="experience.html">Experience</a>
+    <a href="review.html">Leave a review</a>
+    <a href="#book" class="pill">Book a stay</a>
   </div>
 
   <div class="hero-left reveal-up">
@@ -312,48 +314,37 @@
   </div>
 </section>
 
-<!-- ============ FACILITY ============ -->
-<section class="facility" id="facility">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow reveal-up">05 — The facility</p>
-      <h2 class="h-lg reveal-up" style="--d:.1s">Built for dogs. Designed to make their owners relax.</h2>
-    </div>
-    <div class="facility-grid">
-      <figure class="reveal-up"><img src="https://images.unsplash.com/photo-1787152467585-3b6a11777ebd?w=1200&q=75&auto=format&fit=crop" alt="Group of dogs on a colorful play surface" loading="lazy"><figcaption>Small group, always supervised</figcaption></figure>
-      <div class="facility-copy reveal-up" style="--d:.15s">
-        <h3>What a day looks like</h3>
-        <ol class="timeline">
-          <li><span>7:00</span>Breakfast &amp; first yard session</li>
-          <li><span>9:30</span>Play, by size and energy</li>
-          <li><span>12:00</span>Lunch, meds, nap time</li>
-          <li><span>15:00</span>Afternoon yard + enrichment</li>
-          <li><span>18:00</span>Dinner, photo update sent to you</li>
-          <li><span>21:00</span>Last potty break &amp; lights out</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ============ FAQ ============ -->
-<section class="faq container">
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience container" id="experience">
   <div class="section-head">
-    <p class="eyebrow reveal-up">06 — Good to know</p>
-    <h2 class="h-lg reveal-up" style="--d:.1s">Questions we get every week.</h2>
+    <p class="eyebrow reveal-up">05 — Customer experience</p>
+    <h2 class="h-lg reveal-up" style="--d:.1s">What the humans say, and what a day here looks like.</h2>
   </div>
-  <div class="accordion reveal-up">
-    <details open><summary>How much does boarding cost?</summary><p>$25 a day, or $150 a week for longer stays. The weekly rate kicks in automatically once a stay reaches seven days.</p></details>
-    <details><summary>How and when do I pay?</summary><p>Full payment is due up front once your stay is confirmed. If you extend while your dog is with us, payment for the extra days is due within 24 hours. We take Cash App, Zelle, Square and cash.</p></details>
-    <details><summary>Are there breed or size restrictions?</summary><p>No. Every breed and size is welcome. The only dogs we can't take are aggressive ones, for the safety of the other guests.</p></details>
-    <details><summary>What about fleas, ticks and heartworm?</summary><p>We ask for proof your dog is on flea medication. If they aren't, we'll give a monthly NexGard Plus flea-and-heartworm pill at drop-off for $30.</p></details>
-    <details><summary>What should I pack?</summary><p>Their regular food portioned per meal, any medication with instructions, and a blanket or toy that smells like home. If you'd rather not bring food, we'll provide it: $5 a day for dogs up to 40 lb, $10 a day over 40 lb.</p></details>
-    <details><summary>Can I add a bath or nail trim?</summary><p>Yes. A bath with flea-and-tick medicated shampoo and conditioner is $25, and a nail trim is $7. Tick them on the booking form or ask at drop-off.</p></details>
-    <details><summary>Do you offer supplements?</summary><p>Yes. We can give a daily vitamin for shedding, mood, joints and general health for $3 a day. Add it on the booking form.</p></details>
+  <div class="teaser reveal-up">
+    <div class="teaser-rating">
+      <strong id="teaserAvg">—</strong>
+      <div id="teaserStars" aria-hidden="true"></div>
+      <span class="muted" id="teaserCount">Loading reviews…</span>
+    </div>
+    <blockquote class="teaser-quote" id="teaserQuote">
+      <p>“Every dog that stays here gets treated like ours.”</p>
+      <footer>ATL Dog Foodie</footer>
+    </blockquote>
+    <div class="teaser-links">
+      <a class="teaser-link" href="experience.html#reviews"><span>01</span>All reviews</a>
+      <a class="teaser-link" href="experience.html#day"><span>02</span>What a day looks like</a>
+      <a class="teaser-link" href="experience.html#faq"><span>03</span>Good to know</a>
+      <a class="btn-ghost" href="review.html">Leave a review ↗</a>
+    </div>
   </div>
 </section>
+
+
+
+
+
+
+
 
 </main>
 
@@ -375,7 +366,7 @@
     <div>
       <h4>Talk to us</h4>
       <p><a href="tel:+14047972865">(404) 797-2865</a><br><a href="mailto:info@atldogfoodie.com">info@atldogfoodie.com</a></p>
-      <p class="socials"><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+      <p class="socials"><a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="review.html">Leave a review</a></p>
       <p class="pay">Cash App · Zelle · Square · Cash</p>
     </div>
   </div>
@@ -386,6 +377,7 @@
   <div class="footer-wordmark" aria-hidden="true">ATL Dog Foodie</div>
 </footer>
 
+<script src="shared.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
