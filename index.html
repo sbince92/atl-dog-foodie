@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATL Dog Foodie — Home-Style Dog Boarding in Atlanta</title>
+  <meta name="description" content="Home-style dog boarding at $25 a day or $150 a week, plus baths, nail trims and care add-ons. Check availability and send a booking inquiry in under two minutes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FC75B4'/%3E%3Ccircle cx='11' cy='11' r='3' fill='%23474329'/%3E%3Ccircle cx='21' cy='11' r='3' fill='%23474329'/%3E%3Cellipse cx='16' cy='21' rx='7' ry='5.5' fill='%23474329'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+<nav class="floating-nav" id="floatingNav" aria-label="Quick navigation">
+  <a href="#top" class="brand-mini">ATL Dog Foodie</a>
+  <a href="#services">Services</a>
+  <a href="#facility">Facility</a>
+  <a href="#book" class="floating-cta">Book a stay</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-media" aria-hidden="true">
+    <div class="bg"></div>
+    <div class="grain"></div>
+    <div class="fade"></div>
+  </div>
+
+  <div class="dog-wrap" id="dogWrap" aria-hidden="true">
+    <img class="dog" src="assets/dog-dark.webp" alt="" fetchpriority="high">
+    <div class="dog-grade"></div>
+  </div>
+
+  <nav class="nav">
+    <a class="brand" href="#top" aria-label="ATL Dog Foodie home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="3.2"/><circle cx="21" cy="11" r="3.2"/><circle cx="6.5" cy="17" r="2.6"/><circle cx="25.5" cy="17" r="2.6"/><ellipse cx="16" cy="22" rx="7" ry="5.5"/></svg>
+      </span>
+      <span class="brand-name">ATL Dog Foodie</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#facility">Facility</a></li>
+    </ul>
+    <a class="pill" href="#book">Book a stay</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Services</a>
+    <a href="#facility">Facility</a>
+      <a href="#book" class="pill">Book a stay</a>
+  </div>
+
+  <div class="hero-left reveal-up">
+    <p class="kicker">Where good<br>dogs go<br>to stay.</p>
+    <span class="asterisk" aria-hidden="true">✳</span>
+    <span class="hero-script" aria-hidden="true">since 2019</span>
+  </div>
+
+  <div class="hero-right">
+    <h1 class="display">
+      <span class="line"><span class="nowrap">Home-Style</span></span>
+      <span class="line"><span>Dog Boarding</span></span>
+      <span class="line"><span>&amp; Care</span></span>
+    </h1>
+    <p class="lede reveal-up" style="--d:.5s">Your dog stays in a real home, not a kennel run. $25 a day or $150 a week,
+      with baths, nail trims and care add-ons when you need them.</p>
+    <a class="btn-neon reveal-up" style="--d:.65s" href="#book">Book a stay <span class="arrow">↗</span></a>
+  </div>
+
+  <a class="hero-card reveal-up" style="--d:.8s" href="#book">
+    <img src="https://images.unsplash.com/photo-1787152467585-3b6a11777ebd?w=320&h=200&fit=crop&q=70&auto=format" alt="Dogs playing in the fenced yard">
+    <div>
+      <small><i class="pulse"></i>Now booking</small>
+      <strong>Holiday<br>stays</strong>
+    </div>
+  </a>
+
+  <p class="hero-tags reveal-up" style="--d:.9s"><span>Boarding</span>—<span>Baths</span>—<span>Nail trims</span></p>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</header>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>$25 a day</span><i>✳</i><span>$150 a week</span><i>✳</i><span>Home-style boarding</span><i>✳</i><span>Medicated baths</span><i>✳</i><span>Nail trims</span><i>✳</i><span>Daily photo updates</span><i>✳</i>
+    <span>$25 a day</span><i>✳</i><span>$150 a week</span><i>✳</i><span>Home-style boarding</span><i>✳</i><span>Medicated baths</span><i>✳</i><span>Nail trims</span><i>✳</i><span>Daily photo updates</span><i>✳</i>
+  </div>
+</div>
+
+<main>
+<!-- ============ INTRO ============ -->
+<section class="intro container">
+  <p class="eyebrow reveal-up">01 — The lodge</p>
+  <h2 class="h-xl reveal-up" style="--d:.1s">A boarding kennel that feels less like a kennel and more like a <em>second home.</em></h2>
+  <div class="intro-grid">
+    <p class="reveal-up" style="--d:.2s">ATL Dog Foodie is a small, owner-run home facility in Atlanta. Your dog lives with us while you're away: yard time, couch time, their own food and routine, and a human who knows their name, their quirks and their favorite spot to be scratched. We welcome every breed and size — the only dogs we can't take are aggressive ones.</p>
+    <ul class="stats reveal-up" style="--d:.3s">
+      <li><strong data-count="2400">0</strong><span>nights booked</span></li>
+      <li><strong data-count="24">0</strong><span>hour supervision</span></li>
+      <li><strong data-count="25" data-prefix="$">0</strong><span>per day, all in</span></li>
+      <li><strong data-count="4.9" data-decimals="1">0</strong><span>average rating</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services container" id="services">
+  <div class="section-head">
+    <p class="eyebrow reveal-up">02 — Services</p>
+    <h2 class="h-lg reveal-up" style="--d:.1s">Everything your dog needs while you're away.</h2>
+  </div>
+
+  <div class="service-list">
+    <article class="service reveal-up" data-service="boarding">
+      <div class="service-media">
+        <img src="https://images.unsplash.com/photo-1733344026350-228997a24764?w=900&q=75&auto=format&fit=crop" alt="Brown dog resting on a bed" loading="lazy">
+      </div>
+      <div class="service-body">
+        <span class="num">01</span>
+        <h3>Home-Style Boarding</h3>
+        <p>Your dog stays in our home, not a kennel run. Bring their own food and bedding so their routine carries on, and expect a photo update every day. Long-term stays switch to the weekly rate automatically.</p>
+        <ul class="features">
+          <li>In-home, not a kennel</li><li>All breeds &amp; sizes</li><li>Daily photo update</li><li>Weekly rate for long stays</li>
+        </ul>
+      </div>
+      <div class="service-price">
+        <small>per day</small>
+        <strong>$<span data-price="boarding">25</span></strong>
+        <small>or $<span data-price="week">150</span> / week</small>
+        <a class="btn-ghost" href="#book" data-pick="boarding">Book a stay ↗</a>
+      </div>
+    </article>
+
+    <article class="service reveal-up" data-service="bath">
+      <div class="service-media">
+        <img src="https://images.unsplash.com/photo-1758426157062-3622db44ecd6?w=900&q=75&auto=format&fit=crop" alt="Dogs splashing in a shallow water park" loading="lazy">
+      </div>
+      <div class="service-body">
+        <span class="num">02</span>
+        <h3>Bath &amp; Nails</h3>
+        <p>A full bath with flea-and-tick medicated shampoo and conditioner, so they come home clean and protected. Add a nail trim and they'll stop clicking across your floors.</p>
+        <ul class="features">
+          <li>Medicated shampoo</li><li>Conditioner</li><li>Nail trim $<span data-price="nails">7</span></li><li>Add to any stay</li>
+        </ul>
+      </div>
+      <div class="service-price">
+        <small>bath</small>
+        <strong>$<span data-price="bath">25</span></strong>
+        <small>nail trim $<span data-price="nails2">7</span></small>
+        <a class="btn-ghost" href="#book" data-pick="boarding" data-addon="bath">Add a bath ↗</a>
+      </div>
+    </article>
+
+    
+  </div>
+</section>
+
+<!-- ============ VITAMINS ============ -->
+<section class="vitamins container" id="vitamins">
+  <div class="section-head">
+    <p class="eyebrow reveal-up">03 — Supplements</p>
+    <h2 class="h-lg reveal-up" style="--d:.1s">Daily vitamins, <span class="pink">$3 a day.</span></h2>
+    <p class="muted reveal-up" style="--d:.2s">Pure Balance Pro+ soft chews, given with a meal. Tap a jar to see what it helps with and add it to your booking.</p>
+  </div>
+  <div class="jar-row reveal-up" role="list">
+    <button class="jar" type="button" role="listitem" data-vit="daily" style="--label:#E8641B"><span class="jar-cap"></span><span class="jar-body"><span class="jar-brand">Pro+</span><span class="jar-label">Daily Care</span></span><span class="jar-name">Daily Care</span><span class="jar-hint">Everyday multivitamin</span></button>
+    <button class="jar" type="button" role="listitem" data-vit="hip" style="--label:#6E6E6E"><span class="jar-cap"></span><span class="jar-body"><span class="jar-brand">Pro+</span><span class="jar-label">Hip &amp; Joint</span></span><span class="jar-name">Hip &amp; Joint Care</span><span class="jar-hint">Mobility &amp; comfort</span></button>
+    <button class="jar" type="button" role="listitem" data-vit="calm" style="--label:#7B4FB8"><span class="jar-cap"></span><span class="jar-body"><span class="jar-brand">Pro+</span><span class="jar-label">Calm Ease</span></span><span class="jar-name">Calm Ease</span><span class="jar-hint">Stress &amp; new places</span></button>
+    <button class="jar" type="button" role="listitem" data-vit="probiotic" style="--label:#2FB6D6"><span class="jar-cap"></span><span class="jar-body"><span class="jar-brand">Pro+</span><span class="jar-label">Probiotic</span></span><span class="jar-name">Probiotic</span><span class="jar-hint">Digestion &amp; gut</span></button>
+    <button class="jar" type="button" role="listitem" data-vit="skin" style="--label:#FC75B4"><span class="jar-cap"></span><span class="jar-body"><span class="jar-brand">Pro+</span><span class="jar-label">Skin &amp; Coat</span></span><span class="jar-name">Skin &amp; Coat Care</span><span class="jar-hint">Shedding &amp; shine</span></button>
+  </div>
+</section>
+
+<dialog class="vit-dialog" id="vitDialog" aria-labelledby="vitTitle">
+  <form method="dialog" class="vit-inner">
+    <button class="vit-close" value="close" aria-label="Close">×</button>
+    <div class="vit-jar" id="vitJar"><span class="jar-cap"></span><span class="jar-body"><span class="jar-brand">Pro+</span><span class="jar-label" id="vitLabel"></span></span></div>
+    <div class="vit-copy">
+      <p class="eyebrow" id="vitKicker">Supplement</p>
+      <h3 id="vitTitle">Daily Care</h3>
+      <p class="muted" id="vitSummary"></p>
+      <ul class="vit-benefits" id="vitBenefits"></ul>
+      <p class="vit-price">$<span data-price="vitamins">3</span> a day · given with a meal</p>
+      <div class="vit-actions">
+        <button class="btn-neon" value="add" id="vitAdd" type="submit">Add to my booking <span class="arrow">↗</span></button>
+        <button class="btn-ghost" value="close" type="submit">Maybe later</button>
+      </div>
+    </div>
+  </form>
+</dialog>
+
+<!-- ============ BOOKING ============ -->
+<section class="booking" id="book">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal-up">04 — Book a stay</p>
+      <h2 class="h-lg reveal-up" style="--d:.1s">Check availability, then tell us about your dog.</h2>
+      <p class="muted reveal-up" style="--d:.2s">Pick a check-in and check-out date on the calendar. We confirm every inquiry personally within one business day. Full payment is due up front once confirmed, by Cash App, Zelle, Square or cash.</p>
+    </div>
+
+    <div class="booking-grid">
+      <!-- Calendar -->
+      <div class="calendar reveal-up" id="calendar" aria-label="Availability calendar">
+        <div class="cal-head">
+          <button class="cal-nav" id="prevMonth" aria-label="Previous month">←</button>
+          <h3 id="calTitle">Month</h3>
+          <button class="cal-nav" id="nextMonth" aria-label="Next month">→</button>
+        </div>
+        <div class="cal-weekdays"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
+        <div class="cal-grid" id="calGrid" role="grid"></div>
+        <div class="cal-legend">
+          <span><i class="dot open"></i>Available</span>
+          <span><i class="dot limited"></i>Limited</span>
+          <span><i class="dot full"></i>Full</span>
+          <span><i class="dot selected"></i>Your dates</span>
+        </div>
+        <div class="cal-summary" id="calSummary">
+          <div><small>Check-in</small><strong id="sumIn">—</strong></div>
+          <div><small>Check-out</small><strong id="sumOut">—</strong></div>
+          <div><small>Nights</small><strong id="sumNights">—</strong></div>
+          <div><small>Estimate</small><strong id="sumEstimate">—</strong></div>
+        </div>
+        <button class="link-btn" id="clearDates" type="button">Clear dates</button>
+      </div>
+
+      <!-- Inquiry form -->
+      <form class="inquiry reveal-up" id="inquiryForm" novalidate style="--d:.15s">
+        <fieldset>
+          <legend>Stay</legend>
+          <div class="field-row">
+            <label class="field">
+              <span>Service</span>
+              <select name="service" id="serviceSelect" required>
+                <option value="boarding">Home-style boarding</option>
+                <option value="grooming">Bath / nails only (drop-in)</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Check-in</span>
+              <input type="text" name="checkin" id="checkinField" placeholder="Pick on calendar" readonly required>
+            </label>
+            <label class="field">
+              <span>Check-out</span>
+              <input type="text" name="checkout" id="checkoutField" placeholder="Pick on calendar" readonly required>
+            </label>
+          </div>
+          <div class="chips" role="group" aria-label="Add-ons">
+            <label><input type="checkbox" name="addons" value="bath"><span>+ Medicated bath ($25)</span></label>
+            <label><input type="checkbox" name="addons" value="nails"><span>+ Nail trim ($7)</span></label>
+            <label><input type="checkbox" name="addons" value="nexgard"><span>+ NexGard Plus pill ($30)</span></label>
+            <label><input type="checkbox" name="addons" value="food"><span>+ We provide food (<span id="foodRate">$5–10</span>/day by weight)</span></label>
+            <label><input type="checkbox" name="addons" value="vitamins"><span>+ Daily vitamins ($3/day)<span id="vitChoice"></span></span></label>
+            <input type="hidden" name="vitamin" id="vitaminField" value="">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your dog</legend>
+          <div class="field-row">
+            <label class="field"><span>Dog's name</span><input type="text" name="dogName" required placeholder="Rosie"></label>
+            <label class="field"><span>Breed</span><input type="text" name="breed" required placeholder="Pit bull mix"></label>
+          </div>
+          <div class="field-row three">
+            <label class="field"><span>Age</span><input type="text" name="age" placeholder="4 yrs"></label>
+            <label class="field"><span>Weight (lb)</span><input type="number" name="weight" min="1" max="250" placeholder="55"></label>
+            <label class="field"><span>Sex</span>
+              <select name="sex"><option value="">—</option><option>Female</option><option>Male</option></select>
+            </label>
+          </div>
+          <div class="toggles">
+            <label><input type="checkbox" name="vaccinated" required><span>Vaccinations are current</span></label>
+            <label><input type="checkbox" name="fleaMed"><span>On flea medication (we'll ask for proof at drop-off)</span></label>
+            <label><input type="checkbox" name="notAggressive" required><span>My dog is not aggressive toward people or other dogs</span></label>
+            <label><input type="checkbox" name="fixed"><span>Spayed / neutered</span></label>
+            <label><input type="checkbox" name="social"><span>Comfortable around other dogs</span></label>
+          </div>
+          <label class="field"><span>Anything we should know?</span>
+            <textarea name="notes" rows="3" placeholder="Medications, allergies, anxieties, the one toy they can't sleep without…"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>You</legend>
+          <div class="field-row">
+            <label class="field"><span>Your name</span><input type="text" name="ownerName" required placeholder="Dana Morales"></label>
+            <label class="field"><span>Phone</span><input type="tel" name="phone" required placeholder="(555) 014-2200"></label>
+          </div>
+          <label class="field"><span>Email</span><input type="email" name="email" required placeholder="you@example.com"></label>
+          <label class="field"><span>How did you hear about us?</span>
+            <select name="source"><option value="">—</option><option>Friend or vet</option><option>Instagram</option><option>Google</option><option>Returning guest</option></select>
+          </label>
+        </fieldset>
+
+        <p class="form-error" id="formError" role="alert" hidden></p>
+        <button class="btn-neon wide" type="submit" id="submitBtn">Send booking inquiry <span class="arrow">↗</span></button>
+        <p class="fine">We'll reply within one business day to confirm. Full payment is due up front at confirmation; added days are due within 24 hours. Cash App · Zelle · Square · cash.</p>
+      </form>
+
+      <div class="inquiry-success" id="inquirySuccess" hidden>
+        <span class="check">✓</span>
+        <h3>Inquiry sent.</h3>
+        <p id="successText">We've got it. Expect a reply within one business day.</p>
+        <button class="btn-ghost" type="button" id="anotherBtn">Send another inquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FACILITY ============ -->
+<section class="facility" id="facility">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal-up">05 — The facility</p>
+      <h2 class="h-lg reveal-up" style="--d:.1s">Built for dogs. Designed to make their owners relax.</h2>
+    </div>
+    <div class="facility-grid">
+      <figure class="reveal-up"><img src="https://images.unsplash.com/photo-1787152467585-3b6a11777ebd?w=1200&q=75&auto=format&fit=crop" alt="Group of dogs on a colorful play surface" loading="lazy"><figcaption>Small group, always supervised</figcaption></figure>
+      <div class="facility-copy reveal-up" style="--d:.15s">
+        <h3>What a day looks like</h3>
+        <ol class="timeline">
+          <li><span>7:00</span>Breakfast &amp; first yard session</li>
+          <li><span>9:30</span>Play, by size and energy</li>
+          <li><span>12:00</span>Lunch, meds, nap time</li>
+          <li><span>15:00</span>Afternoon yard + enrichment</li>
+          <li><span>18:00</span>Dinner, photo update sent to you</li>
+          <li><span>21:00</span>Last potty break &amp; lights out</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============ FAQ ============ -->
+<section class="faq container">
+  <div class="section-head">
+    <p class="eyebrow reveal-up">06 — Good to know</p>
+    <h2 class="h-lg reveal-up" style="--d:.1s">Questions we get every week.</h2>
+  </div>
+  <div class="accordion reveal-up">
+    <details open><summary>How much does boarding cost?</summary><p>$25 a day, or $150 a week for longer stays. The weekly rate kicks in automatically once a stay reaches seven days.</p></details>
+    <details><summary>How and when do I pay?</summary><p>Full payment is due up front once your stay is confirmed. If you extend while your dog is with us, payment for the extra days is due within 24 hours. We take Cash App, Zelle, Square and cash.</p></details>
+    <details><summary>Are there breed or size restrictions?</summary><p>No. Every breed and size is welcome. The only dogs we can't take are aggressive ones, for the safety of the other guests.</p></details>
+    <details><summary>What about fleas, ticks and heartworm?</summary><p>We ask for proof your dog is on flea medication. If they aren't, we'll give a monthly NexGard Plus flea-and-heartworm pill at drop-off for $30.</p></details>
+    <details><summary>What should I pack?</summary><p>Their regular food portioned per meal, any medication with instructions, and a blanket or toy that smells like home. If you'd rather not bring food, we'll provide it: $5 a day for dogs up to 40 lb, $10 a day over 40 lb.</p></details>
+    <details><summary>Can I add a bath or nail trim?</summary><p>Yes. A bath with flea-and-tick medicated shampoo and conditioner is $25, and a nail trim is $7. Tick them on the booking form or ask at drop-off.</p></details>
+    <details><summary>Do you offer supplements?</summary><p>Yes. We can give a daily vitamin for shedding, mood, joints and general health for $3 a day. Add it on the booking form.</p></details>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="3.2"/><circle cx="21" cy="11" r="3.2"/><circle cx="6.5" cy="17" r="2.6"/><circle cx="25.5" cy="17" r="2.6"/><ellipse cx="16" cy="22" rx="7" ry="5.5"/></svg></span><span class="brand-name">ATL Dog Foodie</span></a>
+      <p class="muted">Home-style dog boarding.<br>Small by design.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>Atlanta, GA<br>Exact address shared at booking</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Fri 7–10am, 4–7pm<br>Sat–Sun 8–10am, 4–6pm</p>
+    </div>
+    <div>
+      <h4>Talk to us</h4>
+      <p><a href="tel:+14047972865">(404) 797-2865</a><br><a href="mailto:info@atldogfoodie.com">info@atldogfoodie.com</a></p>
+      <p class="socials"><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+      <p class="pay">Cash App · Zelle · Square · Cash</p>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <span>© <span id="year"></span> ATL Dog Foodie</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+  <div class="footer-wordmark" aria-hidden="true">ATL Dog Foodie</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
